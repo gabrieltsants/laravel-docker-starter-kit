@@ -32,7 +32,7 @@ services:
     networks:
       - webapp
   postgres:
-    image: postgres:12.3-alpine
+    image: postgres:alpine
     container_name: ${APP_NAME}_postgres
     restart: unless-stopped
     ports:
@@ -47,7 +47,7 @@ services:
     networks:
       - webapp
   cache:
-    image: redis:7
+    image: redis
     container_name: ${APP_NAME}_redis
     networks:
       - webapp
