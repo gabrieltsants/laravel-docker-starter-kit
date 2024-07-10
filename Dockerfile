@@ -12,8 +12,8 @@ RUN apk add --no-cache \
         libpng-dev \
         libwebp-dev \
         freetype-dev \
-        php81-pdo_pgsql \
-        php81-mbstring
+        php83-pdo_pgsql \
+        php83-mbstring
 
 # Install GD
 RUN docker-php-ext-configure gd --with-freetype --with-jpeg 
